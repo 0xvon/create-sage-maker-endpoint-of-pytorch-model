@@ -214,7 +214,7 @@ def test(model, test_x, test_t, device):
         100. * correct / len(test_x)))
 
 def input_fn(request_body, request_content_type):
-    s3 = boto3.resource('s3', aws_access_key_id="AKIAXAGPD6STVODIEREU", aws_secret_access_key="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")
+    s3 = boto3.resource('s3', aws_access_key_id="xxx", aws_secret_access_key="xxx")
     bucket_name = "sagemaker-ap-northeast-1-481470706855"
     file = "dataset/mnist/scaler.save"
     content_object = s3.Object(bucket_name, file)
